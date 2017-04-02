@@ -43,6 +43,7 @@ public class TestSimpleFrame {
 		myframe2.getContentPane().setBackground(Color.WHITE);
 		myframe2.setLocation(location);
 		
+		// test
 		
 	
 	}
