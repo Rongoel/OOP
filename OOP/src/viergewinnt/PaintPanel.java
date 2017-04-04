@@ -11,7 +11,7 @@ public class PaintPanel extends JPanel {
 	    super.paint(gr);
 	    gr.fillOval(40, 70, 40, 40);
 	    
-	    super.paint(gr);
-	    gr.fillRect(90, 100, 50, 50);
+	   /* super.paint(gr);
+	    gr.fillRect(90, 100, 50, 50); */
 	}
 }

@@ -13,7 +13,10 @@ public class TestBruch {
 		System.out.println(a.mul(b));
 		System.out.println(a.rec());
 		System.out.println(b.rec());
-		
+		//System.out.println(Bruch.ggt(2,6));
+		/* a.reduce();
+		System.out.println(a); */
+
 		
 		
 		
