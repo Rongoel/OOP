@@ -1,6 +1,6 @@
 package other;
 
-public class Bruch {
+public class Bruch implements Comparable<Bruch>{
 	int zaehler, nenner;
 	public int getzaehler(){
 		return zaehler;
@@ -56,6 +56,58 @@ public class Bruch {
 		
 		
 	}
-	}	
+	public Bruch add(Bruch other){
+		Bruch b = new Bruch((this.zaehler*other.getnenner())+(other.getzaehler()*this.nenner),(this.getnenner()*other.getnenner()));
+    b.reduce();
+    return b;
+		
+	}
+	public Bruch neg(){
+		return new Bruch(-zaehler,nenner);
+	}
+	
+	
+	public Bruch sub(Bruch other){
+		return add(other.neg());
+		
+	}
+	
+	@Override
+	public int compareTo (Bruch other){
+		if(this.sub(other).getzaehler()<0)
+			return -1;
+		if (this.sub(other).getzaehler()>0)
+			return 1;
+		else
+			return 0;
+			
+		
+	}
+	public boolean equals(Bruch other){
+		if(compareTo(other)==0)
+			return true;
+		else 
+			return false;
+		
+		
+		}	
+	
+	
+	public boolean isLess(Bruch other){
+		if(compareTo(other)==-1)
+			return true;
+		else 
+			return false;
+	}
+	public boolean isGreater(Bruch other){
+		if(compareTo(other)== 1)
+			return true;
+		else 
+			return false;
+	}
+	
+	}
+	
+
 	
 

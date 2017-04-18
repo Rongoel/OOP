@@ -16,6 +16,9 @@ public class TestBruch {
 		//System.out.println(Bruch.ggt(2,6));
 		/* a.reduce();
 		System.out.println(a); */
+		System.out.println(a.equals(b));
+		System.out.println(a.isLess(b));
+		System.out.println(a.isGreater(b));
 
 		
 		
