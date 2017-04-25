@@ -29,12 +29,15 @@ public class TestSimpleFrame {
 		widthFrame = myframe.getWidth();
 		heightFrame = myframe.getHeight();
 		
+		
+		//  Get the location of the first frame (myframe) and adds 10 pixels
 		Point location;
 		location = myframe.getLocation();
 		location.translate(0,(heightFrame+10));
 		
 		
-		
+		// Initializes a new frame  with the same height and width of
+		// the first frame and with the location defined above
 		JFrame myframe2;
 		myframe2 = new JFrame();
 		myframe2.setSize(widthFrame, heightFrame);

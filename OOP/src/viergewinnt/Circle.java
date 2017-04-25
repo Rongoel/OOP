@@ -7,6 +7,7 @@ public class Circle
  public int left, top, diameter;
  public Color fill=Color.BLACK; 
  
+ // sets th
  public Circle(int l, int t, int d)
  {
  left=l;
