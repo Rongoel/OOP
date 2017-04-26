@@ -5,12 +5,16 @@ import javax.swing.*;
 public class GameFrame extends JFrame
 {
  
- private JPanel pnl1, pnl2;
+
+
+private JPanel pnl1, pnl2;
  private JLabel lbl1, lbl2;
  private JTextField txt1, txt2;
  private JButton btn1;
 
-
+/*initializes the window "Vier gewinnt" with the size of 500*300 and its default close operation
+  it also sets the background color, makes a small frame at the bottom with a different color and two lable:
+  "Spieler 1" and "Spieler 2" plus textfield. Furthermore it adds a Button "Neues Spiel"*/
  public GameFrame()
  {
  setTitle("Vier gewinnt");
@@ -35,6 +39,6 @@ public class GameFrame extends JFrame
 
  btn1=new JButton("Neues Spiel");
  pnl2.add(btn1);
- setVisible(true); // als letzte Anweisung
+ setVisible(true); 
  }
 }

@@ -6,6 +6,8 @@ public class CircleGrid {
 	
   private int n, m, d;
   
+  
+  // sets the grit size based on the size of the circles
 	public CircleGrid(int n, int m, int diameter) {
 		
 		this.m = m;
@@ -17,6 +19,7 @@ public class CircleGrid {
 		
 	}
   
+	//draws a circle in the grid
   public void draw(Graphics gr){
   
   for (int i = 0; i<=n; i++){
@@ -29,6 +32,7 @@ public class CircleGrid {
 		  
 	  }
   }
+  // Checks if the click was inside the grid
 	public Position clicked(int x, int y) {
 		int coloumn;
 		int row;

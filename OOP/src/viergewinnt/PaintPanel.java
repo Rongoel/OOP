@@ -10,9 +10,12 @@ import javax.swing.*;
 public class PaintPanel extends JPanel implements MouseListener {
 	
 	
+    // sets the size of the Circle and the CircleGrid
 	Circle c=new Circle(50, 60, 40);
 	CircleGrid cg=new CircleGrid (5,10,30);
 
+	
+	// paints the Circles
 	@Override
 	public void paint(Graphics gr)
 	{
@@ -21,9 +24,13 @@ public class PaintPanel extends JPanel implements MouseListener {
 	    
 	   	   
 	}
+	
+	// adds a Mouse listener
 	public PaintPanel() {
 		addMouseListener(this);
 	}
+	
+	// sets what happens if the mouse is Pressed
 	public void mousePressed(MouseEvent evt){
 		int x=evt.getX();
 		int y=evt.getY();
